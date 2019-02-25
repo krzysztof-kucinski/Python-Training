@@ -1,0 +1,48 @@
+a1=(int(1))
+
+a2=(float(1.5))
+
+a3=str("Text")
+
+a4=bool("Logic")
+
+a5=list(["Disney", "Marvel", "Lucas"])
+
+a6=tuple(("Disney", "Marvel", "Lusas"))
+
+a7=dict({
+    "Disney":"15%",
+    "Marvel":"15%",
+    "Lucas":"10%",
+})
+
+#
+
+type(a1)
+
+type(a2)
+
+type(a3)
+
+type(a4)
+
+type(a5)
+
+type(a6)
+
+type(a7)
+#
+
+print(a1,"and this is",type(a1))
+
+print(a2,"and this is",type(a2))
+
+print(a3,"and this is",type(a3))
+
+print(a4,"and this is",type(a4))
+
+print(a5,"and this is",type(a5))
+
+print(a6,"and this is",type(a6))
+
+print(a7,"and this is",type(a7))

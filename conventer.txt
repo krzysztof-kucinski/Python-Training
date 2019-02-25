@@ -1,0 +1,22 @@
+cm=float(input("Podaj d³ugoœæ w cm: "))
+
+
+
+inch= float(cm / 2.54)
+
+meter= float(cm / 100)
+
+
+
+print("Jest to:",round(inch,4),"cali. Oraz:",round(meter,4), "metrów.")
+
+
+
+kg=float(input("Teraz podaj d³ugoœæ w kg: "))
+
+
+pound= float(kg * 2.20462)
+
+
+
+print("Jest to:",round(pound,4),"funtów.")

@@ -1,0 +1,25 @@
+Dictionary = {
+    "How I met your Mother" : "6",
+    "Friends":"10",
+    "Game of Thrones":"2",
+    "Atypical":"8",
+    "Grace and Molly":"1",
+    "House of Cards":"4"
+}
+
+print((list(Dictionary.keys())))
+
+print("****************************************")
+
+name=(input("Type your serial choice: "))
+
+print("Serial {} otrzyma³ ocenê {}".format(name, Dictionary[name]))
+
+print("****************************************")
+
+new = input('Jaki serial dodaæ do bazy? ')
+rating = input('Jak¹ ocenê otrzyma³ ' + new + '? ')
+Dictionary[new] = float(rating)
+
+print('******************************************')
+print(list(Dictionary.keys()))
