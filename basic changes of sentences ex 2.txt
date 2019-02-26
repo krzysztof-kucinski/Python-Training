@@ -1,0 +1,23 @@
+name=input("Podaj swoje imiê: ")
+surname=input("Podaj swoje nazwisko: ")
+phonenumber=input("Podaj swój numer telefonu: ")
+
+name=name.capitalize() #
+surname=surname.capitalize()
+
+phonenumber=phonenumber.replace("-","")
+phonenumber=phonenumber.replace(" ","")
+
+#SprawdŸ czy imiê i nazwisko sk³adaj¹ siê tylko z liter, a nr tel sk³ada siê wy³¹cznie z cyfr (wyœwietl tê informacjê jako true/false)
+#U¿ytkownicy bywaj¹ leniwi. Nie zawsze zapisuj¹ imiê czy nazwisko z du¿ej litery – popraw ich
+#Niektórzy podaj¹ numer telefonu z myœlnikami lub z spacjami, usuñ zbêdne znaki z numeru
+#Zak³adaj¹c, ¿e twoi u¿ytkownicy nosz¹ polskie imiona, sprawdŸ czy u¿ytkownik jest kobiet¹
+#Po³¹cz dane w jeden ci¹g personal za pomoc¹ spacji
+#Policz liczbê wszystkich znaków w napisie personal
+#Podaj liczbê tylko liter w napisie personal
+print("Czy imiê sk³ada siê tylko z liter:? ",name.isalpha()) 
+print("Czy nazwisko sk³ada sie tylko z liter:? ",surname.isalpha())
+print("Czy numer telefonu zawiera tylko cyfry:? ",phonenumber.isdigit())
+print("U¿ytkownicy s¹ leniwi i nie zawsze wpisuja imiê w wielkiej litery.\n Nale¿y ich Poprawiæ: ",name)
+print("U¿ytkownicy s¹ leniwi i nie zawsze wpisuja nazwisko w wielkiej litery.\n Nale¿y ich Poprawiæ: ",surname)
+print("Niektórzy podaj¹ numer telefonu z myœlnikiem lub spacj¹.\n Usuniête: ",phonenumber)

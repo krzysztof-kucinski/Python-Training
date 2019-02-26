@@ -1,0 +1,11 @@
+sentence="Kurs Pythona_jest prosty i przyjemny."
+length=len(sentence)
+print("Ca³kowita iloœæ znaków:",length)
+print("Wyœwietlenie napisu 'prosty' ze zdania:",sentence[18:25])
+print("Indeks nr 7 ze zdania:",sentence[7])
+print("Indeks nr 12 ze zdania:",sentence[12])
+print("Indeks -4 ze zdania:",sentence[-4])
+print("Indeks nr 37 nie istnieje bo jest kropk¹:", sentence[36], )
+sentence=sentence.replace("u","ó")
+sentence=sentence.replace("rz","¿")
+print("Edycja zdania tak aby zawiera³a b³¹d:",sentence)
