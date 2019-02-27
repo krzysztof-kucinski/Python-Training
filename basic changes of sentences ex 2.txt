@@ -1,6 +1,6 @@
-name=input("Podaj swoje imi�: ")
+name=input("Podaj swoje imię: ")
 surname=input("Podaj swoje nazwisko: ")
-phonenumber=input("Podaj sw�j numer telefonu: ")
+phonenumber=input("Podaj swój numer telefonu: ")
 
 name=name.capitalize() #
 surname=surname.capitalize()
@@ -8,16 +8,59 @@ surname=surname.capitalize()
 phonenumber=phonenumber.replace("-","")
 phonenumber=phonenumber.replace(" ","")
 
-#Sprawd� czy imi� i nazwisko sk�adaj� si� tylko z liter, a nr tel sk�ada si� wy��cznie z cyfr (wy�wietl t� informacj� jako true/false)
-#U�ytkownicy bywaj� leniwi. Nie zawsze zapisuj� imi� czy nazwisko z du�ej litery � popraw ich
-#Niekt�rzy podaj� numer telefonu z my�lnikami lub z spacjami, usu� zb�dne znaki z numeru
-#Zak�adaj�c, �e twoi u�ytkownicy nosz� polskie imiona, sprawd� czy u�ytkownik jest kobiet�
-#Po��cz dane w jeden ci�g personal za pomoc� spacji
-#Policz liczb� wszystkich znak�w w napisie personal
-#Podaj liczb� tylko liter w napisie personal
-print("Czy imi� sk�ada si� tylko z liter:? ",name.isalpha()) 
-print("Czy nazwisko sk�ada sie tylko z liter:? ",surname.isalpha())
+#Sprawdź czy imię i nazwisko składają się tylko z liter, a nr tel składa się wyłącznie z cyfr (wyświetl tę informację jako true/false)
+#Użytkownicy bywają leniwi. Nie zawsze zapisują imię czy nazwisko z dużej litery – popraw ich
+#Niektórzy podają numer telefonu z myślnikami lub z spacjami, usuń zbędne znaki z numeru
+#Zakładając, że twoi użytkownicy noszą polskie imiona, sprawdź czy użytkownik jest kobietą
+#Połącz dane w jeden ciąg personal za pomocą spacji
+#Policz liczbę wszystkich znaków w napisie personal
+#Podaj liczbę tylko liter w napisie personal
+print("Czy imię składa się tylko z liter:? ",name.isalpha()) 
+print("Czy nazwisko składa sie tylko z liter:? ",surname.isalpha())
 print("Czy numer telefonu zawiera tylko cyfry:? ",phonenumber.isdigit())
-print("U�ytkownicy s� leniwi i nie zawsze wpisuja imi� w wielkiej litery.\n Nale�y ich Poprawi�: ",name)
-print("U�ytkownicy s� leniwi i nie zawsze wpisuja nazwisko w wielkiej litery.\n Nale�y ich Poprawi�: ",surname)
-print("Niekt�rzy podaj� numer telefonu z my�lnikiem lub spacj�.\n Usuni�te: ",phonenumber)
+print("Użytkownicy są leniwi i nie zawsze wpisuja imię w wielkiej litery.\n Należy ich Poprawić: ",name)
+print("Użytkownicy są leniwi i nie zawsze wpisuja nazwisko w wielkiej litery.\n Należy ich Poprawić: ",surname)
+print("Niektórzy podają numer telefonu z myślnikiem lub spacją.\n Usunięte: ",phonenumber)
+
+# Utwórz skrypt, który zapyta użytkownika o imię, nazwisko i numer telefonu, a następnie:
+
+#1 Sprawdź czy imię i nazwisko składają się tylko z liter, a nr tel składa się wyłącznie z cyfr (wyświetl tę informację jako true/false)
+#2 Użytkownicy bywają leniwi. Nie zawsze zapisują imię czy nazwisko z dużej litery – popraw ich
+#3 Niektórzy podają numer telefonu z myślnikami lub z spacjami, usuń zbędne znaki z numeru
+#4 Zakładając, że twoi użytkownicy noszą polskie imiona, sprawdź czy użytkownik jest kobietą
+#5 Połącz dane w jeden ciąg personal za pomocą spacji
+#6 Policz liczbę wszystkich znaków w napisie personal
+#7 Podaj liczbę tylko liter w napisie personal
+
+name=input("Podaj swoje imię: ")
+surname=input("Podaj swoje nazwisko: ")
+phonenumber=input("Podaj swój numer telefonu: ")
+
+#1
+print("Czy imię składa się tylko z liter:? ",name.isalpha()) 
+print("Czy nazwisko składa sie tylko z liter:? ",surname.isalpha())
+print("Czy numer telefonu zawiera tylko cyfry:? ",phonenumber.isdigit())
+
+#2
+name=name.capitalize() 
+surname=surname.capitalize()
+print("Użytkownicy są leniwi i nie zawsze wpisuja imię w wielkiej litery.\n Należy ich Poprawić: ",name)
+print("Użytkownicy są leniwi i nie zawsze wpisuja nazwisko w wielkiej litery.\n Należy ich Poprawić: ",surname)
+
+#3
+phonenumber=phonenumber.replace("-","")
+phonenumber=phonenumber.replace(" ","")
+print("Niektórzy podają numer telefonu z myślnikiem lub spacją.\n Usunięte: ",phonenumber)
+
+#4
+
+
+#5 
+personal = name + ' ' + surname + ' ' + phonenumber
+print("Dane personalne: ",personal)
+
+#6
+len(personal)
+print("Liczba wszystkich znaków w napisie personal:",len(personal))
+
+#7
